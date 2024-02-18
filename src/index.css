@@ -17,6 +17,11 @@ h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   margin: 0;
   padding-left: 0;
@@ -44,9 +49,12 @@ img {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variation-settings: 'wdth' 100;
 }
 
 /* code {
