@@ -2,14 +2,14 @@ import css from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className={css.header}>
-      <div className={css.logo}>Logo</div>
+    <header className={css.headerContainer}>
+      <div className={css.logo}>LOGO</div>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Career</li>
-          <li>Awards</li>
-          <li>Contacts</li>
+          <li>ABOUT</li>
+          <li>CAREER</li>
+          <li>AWARDS</li>
+          <li>CONTACTS</li>
         </ul>
       </nav>
     </header>
