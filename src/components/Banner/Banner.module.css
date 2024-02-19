@@ -7,15 +7,7 @@
   background-color: var(--brand-color-dark);
   color: var(--brand-color-ligth);
   row-gap: 14px;
-  position: relative;
-}
-
-.firstImage {
-  position: absolute;
-  width: 294px;
-  top: -26px;
-  left: 77px;
-  z-index: 1;
+  /* position: relative; */
 }
 
 .heading {
@@ -27,17 +19,15 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
+  position: relative;
 }
 
-.headinLastWord {
-  display: flex;
-  justify-content: end;
-}
-
-.bannerDescription {
-  margin-left: auto;
-  width: 176px;
-  z-index: 2;
+.firstImage {
+  position: absolute;
+  width: 294px;
+  top: -26px;
+  left: 77px;
+  z-index: 1;
 }
 
 .secondImage {
@@ -48,8 +38,61 @@
   z-index: 1;
 }
 
+.headingLastWord {
+  display: flex;
+  justify-content: end;
+}
+
+.description {
+  margin-left: auto;
+  width: 176px;
+  z-index: 2;
+}
+
 @media screen and (min-width: 768px) {
+  .container {
+    padding-top: 88px;
+  }
+
+  .firstImage {
+    /* position: absolute; */
+    width: 324px;
+    top: -173px;
+    left: 347px;
+    z-index: 3;
+  }
+
   .heading {
-    width: 50%;
+    width: 634px;
+    font-size: 108px;
+    line-height: 108px;
+  }
+
+  .headingFirstWord {
+    padding-left: 60px;
+  }
+
+  .headingSecondWord {
+    display: flex;
+    justify-content: end;
+  }
+
+  .headingLastWord {
+    display: flex;
+    justify-content: start;
+  }
+
+  .description {
+    position: absolute;
+    bottom: 255px;
+    right: 300px;
+  }
+
+  .secondImage {
+    /* position: absolute; */
+    width: 382px;
+    top: -84px;
+    left: -201px;
+    z-index: 3;
   }
 }
