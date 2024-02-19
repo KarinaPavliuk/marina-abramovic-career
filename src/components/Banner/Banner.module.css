@@ -1,10 +1,21 @@
 .container {
   padding: var(--container-mobile-padding);
+  padding-top: 198px;
+  padding-bottom: 248px;
   display: flex;
   flex-direction: column;
   background-color: var(--brand-color-dark);
   color: var(--brand-color-ligth);
   row-gap: 14px;
+  position: relative;
+}
+
+.firstImage {
+  position: absolute;
+  width: 294px;
+  top: -26px;
+  left: 77px;
+  z-index: 1;
 }
 
 .heading {
@@ -15,6 +26,7 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .headinLastWord {
@@ -25,6 +37,15 @@
 .bannerDescription {
   margin-left: auto;
   width: 176px;
+  z-index: 2;
+}
+
+.secondImage {
+  position: absolute;
+  width: 272px;
+  top: 328px;
+  left: 0px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {

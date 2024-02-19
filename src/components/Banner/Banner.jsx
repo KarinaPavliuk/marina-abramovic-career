@@ -1,8 +1,15 @@
 import css from './Banner.module.css';
+import firstImage from '../../images/banner_first_2x.png';
+import secondImage from '../../images/banner_second_2x.png';
 
 const Banner = () => {
   return (
     <div className={css.container}>
+      <img
+        className={css.firstImage}
+        src={firstImage}
+        alt="Marina Abramović"
+      ></img>
       <h1 className={css.heading}>
         <span>Marina</span>
         <span>Abramović</span>
@@ -12,13 +19,8 @@ const Banner = () => {
         Serbian conceptual and performance artist.
       </p>
       <img
-        className={css.bannerImage}
-        src={'../../images/banner_1.png'}
-        alt="Marina Abramović"
-      ></img>
-      <img
-        className={css.bannerImage}
-        src="../../images/banner_2.png"
+        className={css.secondImage}
+        src={secondImage}
         alt="Marina Abramović"
       ></img>
     </div>
