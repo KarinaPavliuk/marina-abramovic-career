@@ -1,41 +1,52 @@
 .container {
   padding: var(--container-mobile-padding);
-  padding-top: 198px;
-  padding-bottom: 248px;
+  padding-top: 260px;
+  padding-bottom: 316px;
   display: flex;
   flex-direction: column;
   background-color: var(--brand-color-dark);
   color: var(--brand-color-ligth);
   row-gap: 14px;
-  /* position: relative; */
 }
 
 .heading {
-  width: 100%;
+  width: 352px;
   margin: 0 auto;
   font-size: 54px;
   line-height: 54px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  z-index: 2;
   position: relative;
 }
 
 .firstImage {
   position: absolute;
-  width: 294px;
-  top: -26px;
-  left: 77px;
+  width: 214px;
+  top: -215px;
+  right: 38px;
+  transform: rotate(15deg);
+  box-shadow: 0px 16px 60px 23px #181818;
   z-index: 1;
 }
 
 .secondImage {
   position: absolute;
-  width: 272px;
-  top: 328px;
-  left: 0px;
+  width: 172px;
+  border: 5px solid var(--brand-color-ligth);
+  top: 188px;
+  left: 20px;
+  transform: rotate(-15deg);
+  box-shadow: 0px 16px 60px 23px #181818;
   z-index: 1;
+}
+
+.headingFirstWord {
+  z-index: 2;
+}
+
+.headingSecondWord {
+  z-index: 2;
 }
 
 .headingLastWord {
@@ -44,26 +55,31 @@
 }
 
 .description {
-  margin-left: auto;
-  width: 176px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  width: 166px;
+  bottom: -40px;
+  right: 0px;
   z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    padding-top: 88px;
+    padding-top: 110px;
   }
 
   .firstImage {
     /* position: absolute; */
-    width: 324px;
-    top: -173px;
-    left: 347px;
+    width: 220px;
+    top: -140px;
+    right: 24px;
     z-index: 3;
   }
 
   .heading {
-    width: 634px;
+    width: 748px;
     font-size: 108px;
     line-height: 108px;
   }
@@ -83,16 +99,18 @@
   }
 
   .description {
-    position: absolute;
-    bottom: 255px;
-    right: 300px;
+    width: 230px;
+    font-size: 20px;
+    line-height: 24px;
+    right: -114px;
+    bottom: 8px;
   }
 
   .secondImage {
-    /* position: absolute; */
-    width: 382px;
-    top: -84px;
-    left: -201px;
+    width: 238px;
+    border: 8px solid var(--brand-color-ligth);
+    top: -4px;
+    left: -184px;
     z-index: 3;
   }
 }

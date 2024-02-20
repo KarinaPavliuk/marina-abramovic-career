@@ -1,6 +1,6 @@
 import css from './Banner.module.css';
-import firstImage from '../../images/banner_first_2x.png';
-import secondImage from '../../images/banner_second_2x.png';
+import firstImage from '../../images/banner_first_img.png';
+import secondImage from '../../images/banner_second_img.png';
 
 const Banner = () => {
   return (
@@ -11,18 +11,18 @@ const Banner = () => {
           src={firstImage}
           alt="Marina Abramović"
         ></img>
-        <span className={css.headingFirstWord}>Marina</span>
-        <span className={css.headingSecondWord}>Abramović</span>
-        <span className={css.headingLastWord}>Biography</span>
+        <span className={css.headingFirstWord}>MARINA</span>
+        <span className={css.headingSecondWord}>ABRAMOVIĆ</span>
+        <span className={css.headingLastWord}>BIOGRAPHY</span>
         <img
           className={css.secondImage}
           src={secondImage}
           alt="Marina Abramović"
         ></img>
+        <p className={css.description}>
+          Serbian conceptual and performance artist.
+        </p>
       </h1>
-      <p className={css.description}>
-        Serbian conceptual and performance artist.
-      </p>
     </div>
   );
 };

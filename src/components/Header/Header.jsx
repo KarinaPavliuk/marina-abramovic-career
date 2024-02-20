@@ -1,12 +1,15 @@
 import css from './Header.module.css';
+import sprite from '../../images/sprite.svg';
 
 const Header = () => {
   return (
     <header className={css.headerContainer}>
-      <div className={css.logo}>
-        <a href="#">LOGO</a>
-      </div>
-      <nav>
+      <a className={css.logoLink} href="#">
+        <svg className={css.logoIcon}>
+          <use xlinkHref={`${sprite}#icon-logo`} />
+        </svg>
+      </a>
+      <nav className={css.navigation}>
         <ul>
           <li>
             <a href="#">ABOUT</a>
@@ -22,6 +25,29 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <button type="button" className={css.menuButton}>
+        <svg className={css.menuIcon}>
+          <use xlinkHref={`${sprite}#icon-menu`} />
+        </svg>
+      </button>
+
+      <div className={css.mobileMenu}>
+        <ul>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CAREER</a>
+          </li>
+          <li>
+            <a href="#">AWARDS</a>
+          </li>
+          <li>
+            <a href="#">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
