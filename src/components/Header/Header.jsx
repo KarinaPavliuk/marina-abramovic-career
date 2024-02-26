@@ -32,21 +32,28 @@ const Header = () => {
         </svg>
       </button>
 
-      <div className={css.mobileMenu}>
-        <ul>
-          <li>
-            <a href="#">ABOUT</a>
-          </li>
-          <li>
-            <a href="#">CAREER</a>
-          </li>
-          <li>
-            <a href="#">AWARDS</a>
-          </li>
-          <li>
-            <a href="#">CONTACTS</a>
-          </li>
-        </ul>
+      <div className={css.backdrop}>
+        <nav className={css.mobileMenu}>
+          <button type="button" className={css.closeMenuButton}>
+            <svg className={css.closeMenuIcon}>
+              <use xlinkHref={`${sprite}#icon-close`} />
+            </svg>
+          </button>
+          <ul className={css.menuList}>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">CAREER</a>
+            </li>
+            <li>
+              <a href="#">AWARDS</a>
+            </li>
+            <li>
+              <a href="#">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
