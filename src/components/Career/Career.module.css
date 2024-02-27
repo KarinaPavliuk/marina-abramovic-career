@@ -23,6 +23,8 @@
 .performList {
   display: flex;
   column-gap: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 .location {
