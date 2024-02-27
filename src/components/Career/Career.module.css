@@ -1,0 +1,71 @@
+.container {
+  padding: var(--container-mobile-padding);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.descriptionContainer {
+  margin-bottom: 20px;
+}
+
+.sitePartName {
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  /* text-align: justify; */
+  line-height: 24px;
+}
+
+.performList {
+  display: flex;
+  column-gap: 20px;
+}
+
+.location {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 12px;
+  color: #6b6b6b;
+}
+
+.image {
+  width: 304px;
+  height: 408px;
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.performTitle {
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightArrow {
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: var(--container-desktop-padding);
+    padding-top: 148px;
+    padding-bottom: 152px;
+  }
+
+  .descriptionContainer {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description {
+    width: 712px;
+  }
+}
