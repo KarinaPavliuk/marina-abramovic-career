@@ -60,3 +60,49 @@
   color: #6b6b6b;
   text-align: center;
 }
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: flex;
+  }
+
+  .container {
+    padding: var(--container-desktop-padding);
+    padding-top: 148px;
+    padding-block: 148px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contactsAndAboutWrap {
+    width: 68%;
+  }
+
+  .aboutList {
+    row-gap: 12px;
+  }
+
+  .connectWrap {
+    width: 128px;
+  }
+
+  .titleConnect {
+    margin-bottom: 32px;
+  }
+
+  .address {
+    margin-bottom: 58px;
+  }
+
+  .contactsList {
+    row-gap: 4px;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

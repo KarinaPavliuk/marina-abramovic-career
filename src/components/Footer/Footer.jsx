@@ -11,11 +11,14 @@ const Footer = () => {
               <use xlinkHref={`${sprite}#icon-logo`} />
             </svg>
           </a>
-          <ul className={css.contactsList}>
+          <ul className={`${css.contactsList} ${css.mobile}`}>
             <li>TWITTER</li>
             <li>FACEBOOK</li>
             <li>LINKEDIN</li>
           </ul>
+          <p className={`${css.copyright} ${css.desktop}`}>
+            ALL RIGHT RESERVED
+          </p>
         </div>
         <div>
           <p className={css.titleAbout}>About</p>
@@ -31,10 +34,15 @@ const Footer = () => {
       </div>
       <div className={css.connectWrap}>
         <p className={css.titleConnect}>Connect</p>
-        <p>ZELENA 22 LVIV, UKRAINE</p>
+        <p className={css.address}>ZELENA 22 LVIV, UKRAINE</p>
+        <ul className={`${css.contactsList} ${css.desktop}`}>
+          <li>TWITTER</li>
+          <li>FACEBOOK</li>
+          <li>LINKEDIN</li>
+        </ul>
       </div>
 
-      <p className={css.copyright}>ALL RIGHT RESERVED</p>
+      <p className={`${css.copyright} ${css.mobile}`}>ALL RIGHT RESERVED</p>
     </div>
   );
 };
