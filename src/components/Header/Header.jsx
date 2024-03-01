@@ -3,7 +3,7 @@ import sprite from '../../images/sprite.svg';
 
 const Header = () => {
   return (
-    <header className={css.headerContainer}>
+    <header className={css.сontainer}>
       <a className={css.logoLink} href="#">
         <svg className={css.logoIcon}>
           <use xlinkHref={`${sprite}#icon-logo`} />

@@ -1,0 +1,58 @@
+.container {
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.seeMoreButton {
+  padding: 12px 142px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--brand-color-dark);
+  color: white;
+}
+
+.rightArrow {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 384px 0 62px 0;
+    margin-bottom: 148px;
+    background-image: url(../../../images/relation-in-time.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    width: 248px;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 28px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .seeMoreButton {
+    padding: 8px 18px;
+  }
+}

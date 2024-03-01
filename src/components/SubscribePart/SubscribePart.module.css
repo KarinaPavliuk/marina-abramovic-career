@@ -1,0 +1,98 @@
+.container {
+  padding: var(--container-mobile-padding);
+  padding-top: 174px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 18px 18px 18px 60px;
+  border: 1px solid var(--brand-color-ligth);
+  border-radius: 32px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.mailIcon {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 28px;
+  top: 20px;
+}
+
+.button {
+  padding: 20px 32px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--brand-color-dark);
+  color: var(--brand-color-ligth);
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 312px;
+    padding-bottom: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .description {
+    width: 400px;
+    margin-bottom: 48px;
+    font-size: 16px;
+  }
+
+  .form {
+    width: 608px;
+    flex-direction: row;
+  }
+
+  .inputWrap {
+    width: 70%;
+  }
+
+  .input {
+    margin-bottom: 0;
+    border-radius: 33px 0 0 33px;
+  }
+
+  .button {
+    width: 30%;
+    border-radius: 0 33px 33px 0;
+  }
+}
