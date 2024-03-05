@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "image": "../images/books/book-the-cleaner.png",
+    "image": "../../images/books/book-the-cleaner.png",
     "title": "THE CLEANER",
     "description": "At once radical, controversial and revered, Marina Abramovic is one of the most discussed artists today. Famous for her groundbreaking performance works, she continues..."
   },
   {
     "id": 2,
-    "image": "../images/books/book-walk-through-walls.png",
+    "image": "../../images/books/book-walk-through-walls.png",
     "title": "WALK THROUGH WALLS",
     "description": "I had experienced absolute freedom—I had felt that my body was without boundaries, limitless; that pain didn`t matter, that nothing mattered at all—and it intoxicated me."
   },
   {
     "id": 3,
-    "image": "../images/books/book-7-deaths-of-maria-callas.png",
+    "image": "../../images/books/book-7-deaths-of-maria-callas.png",
     "title": "7 DEATHS OF MARIA CALLAS",
     "description": "Here Abramovic turns her focus to renowned opera singer Maria Callas, whose stunning soprano voice captivated audiences around the world in the mid-20th century..."
   }

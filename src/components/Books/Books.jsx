@@ -10,7 +10,7 @@ const Books = () => {
     <div className={css.container}>
       <p className={css.sitePartName}>BOOKS</p>
       <ul className={css.list}>
-        {books.map(({ id, image, title, description }) => (
+        {/* {books.map(({ id, image, title, description }) => (
           <li className={css.listItem} key={id}>
             <img className={css.image} src={image} alt={`book ${title}`} />
             <div className={css.underImageText}>
@@ -23,9 +23,9 @@ const Books = () => {
               <p className={css.description}>{description}</p>
             </div>
           </li>
-        ))}
+        ))} */}
 
-        {/* <li className={css.listItem}>
+        <li className={css.listItem}>
           <img className={css.image} src={theCleaner} alt="book The Cleaner" />
           <div className={css.underImageText}>
             <p className={css.title}>
@@ -40,9 +40,9 @@ const Books = () => {
               groundbreaking performance works, she continues...
             </p>
           </div>
-        </li> */}
+        </li>
 
-        {/* <li className={css.listItem}>
+        <li className={css.listItem}>
           <img
             className={css.image}
             src={walkThroughWalls}
@@ -61,9 +61,9 @@ const Books = () => {
               nothing mattered at all—and it intoxicated me.”
             </p>
           </div>
-        </li> */}
+        </li>
 
-        {/* <li className={css.listItem}>
+        <li className={css.listItem}>
           <img
             className={css.image}
             src={sevenDeaths}
@@ -82,7 +82,7 @@ const Books = () => {
               the world in the mid-20th century...
             </p>
           </div>
-        </li> */}
+        </li>
       </ul>
     </div>
   );
