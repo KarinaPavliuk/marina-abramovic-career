@@ -40,21 +40,30 @@
   flex-direction: row-reverse;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   z-index: 10;
   background-color: #181818e3;
-  display: none;
+}
+
+.backdrop.open {
+  right: 0;
 }
 
 .mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
   width: 262px;
+  height: 100%;
   padding: 24px 20px 0px 60px;
-  /* padding-top: 24px;
-  padding-right: 20px;
-  padding-left: 60px; */
   display: flex;
   flex-direction: column;
   background-color: var(--brand-color-dark);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobileMenu.open {
+  right: 0;
 }
 
 .closeMenuIcon {

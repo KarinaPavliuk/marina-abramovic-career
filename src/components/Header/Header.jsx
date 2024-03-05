@@ -1,7 +1,18 @@
+import { useState } from 'react';
+
 import css from './Header.module.css';
 import sprite from '../../images/sprite.svg';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  function test(event) {
+    console.log('click', event.currentTarget.styles);
+  }
+
   return (
     <header className={css.сontainer}>
       <a className={css.logoLink} href="#">
@@ -26,15 +37,19 @@ const Header = () => {
         </ul>
       </nav>
 
-      <button type="button" className={css.menuButton}>
+      <button onClick={toggleMenu} type="button" className={css.menuButton}>
         <svg className={css.menuIcon}>
           <use xlinkHref={`${sprite}#icon-menu`} />
         </svg>
       </button>
 
-      <div className={css.backdrop}>
-        <nav className={css.mobileMenu}>
-          <button type="button" className={css.closeMenuButton}>
+      <div className={`${css.backdrop} ${isOpen && css.open}`}>
+        <nav className={`${css.mobileMenu} ${isOpen && css.open}`}>
+          <button
+            onClick={toggleMenu}
+            type="button"
+            className={css.closeMenuButton}
+          >
             <svg className={css.closeMenuIcon}>
               <use xlinkHref={`${sprite}#icon-close`} />
             </svg>

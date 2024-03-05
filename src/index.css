@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
   --brand-color-dark: #181818;
   --brand-color-ligth: #ececec;
