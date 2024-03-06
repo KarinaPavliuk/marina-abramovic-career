@@ -9,10 +9,6 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  function test(event) {
-    console.log('click', event.currentTarget.styles);
-  }
-
   return (
     <header className={css.сontainer}>
       <a className={css.logoLink} href="#">
