@@ -1,8 +1,31 @@
 .container {
   padding: var(--container-mobile-padding);
-  padding-top: 174px;
+  padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+
+.horizontalLine {
+  width: 100%;
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  display: flex;
+  overflow: hidden;
+}
+
+.horizontalLineText {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .title {
@@ -55,13 +78,22 @@
   line-height: 1;
 }
 
+.button:is(:hover, :focus) {
+  color: var(--brand-color-hover);
+}
+
 @media screen and (min-width: 768px) {
   .container {
-    padding-top: 312px;
+    padding-top: 148px;
     padding-bottom: 148px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .horizontalLine {
+    height: 144px;
+    font-size: 144px;
   }
 
   .title {

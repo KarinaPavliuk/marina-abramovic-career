@@ -23,6 +23,7 @@
 .logoIcon {
   width: 72px;
   height: 28px;
+  fill: var(--brand-color-ligth);
 }
 
 .titleAbout {
@@ -59,6 +60,14 @@
   letter-spacing: 0.02em;
   color: #6b6b6b;
   text-align: center;
+}
+
+.listItem {
+  cursor: pointer;
+}
+
+.listItem:is(:hover, :focus) {
+  color: var(--brand-color-hover);
 }
 
 .desktop {

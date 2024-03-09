@@ -26,6 +26,11 @@
   margin-bottom: 20px;
 }
 
+.underImageContent {
+  display: flex;
+  flex-direction: column;
+}
+
 .underImageTitle {
   margin-bottom: 20px;
   font-size: 28px;
@@ -41,23 +46,52 @@
 }
 
 .seeMoreButton {
-  padding: 12px 142px;
+  padding: 12px 34%;
   border: none;
   border-radius: 32px;
   background-color: #181818;
   color: white;
 }
 
+.seeMoreButton:is(:hover, :focus) {
+  color: var(--brand-color-hover);
+}
+
+.seeMoreButton:is(:hover, :focus) .rightArrow {
+  fill: var(--brand-color-hover);
+}
+
 .rightArrow {
   width: 12px;
   height: 12px;
+  fill: var(--brand-color-ligth);
 }
 
 .horizontalLine {
   width: 100%;
   height: 80px;
-  border: none;
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: center;
+  color: var(--brand-color-ligth);
   background-color: var(--brand-color-dark);
+  overflow: hidden;
+}
+
+.horizontalLineText {
+  white-space: nowrap;
+  animation: scroll 14s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -83,7 +117,7 @@
   }
 
   .underImageContent {
-    display: flex;
+    flex-direction: row;
     column-gap: 104px;
     position: relative;
   }
@@ -107,5 +141,6 @@
 
   .horizontalLine {
     height: 144px;
+    font-size: 144px;
   }
 }

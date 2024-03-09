@@ -11,13 +11,18 @@
 }
 
 .listItem {
+  height: 24px;
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 40px;
   position: relative;
   display: flex;
+  transition: height 0.5s ease;
+}
+
+.listItem.heightAnimate {
+  height: 602px;
 }
 
 .listItem:nth-child(-n + 5)::after {
@@ -40,22 +45,21 @@
 .title,
 .time {
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  /* margin-bottom: 24px; */
 }
 
 .description {
   height: 0;
   overflow: hidden;
-  margin-bottom: 0;
-  transition: height 0.5s ease;
+  padding-top: 20px;
   font-size: 16px;
   line-height: 1.2;
-  /* margin-bottom: 28px; */
+  transition: height 0.5s ease;
 }
 
-.description.open {
+.description.show {
   height: 100%;
 }
 
@@ -64,6 +68,7 @@
   height: 24px;
   border: none;
   background: none;
+  transition: 0.5s ease;
 }
 
 .arrowIcon {
@@ -72,9 +77,14 @@
   padding: 4px;
 }
 
+.toggleButton.rotate {
+  transform: rotate(-0.5turn);
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: var(--container-desktop-padding);
+    padding-top: 80px;
     padding-bottom: 130px;
     display: flex;
     justify-content: space-between;
@@ -84,6 +94,14 @@
     width: 70%;
     position: relative;
     right: -100px;
+  }
+
+  .listItem {
+    height: 38px;
+  }
+
+  .listItem.heightAnimate {
+    height: 358px;
   }
 
   .title,

@@ -19,16 +19,25 @@
 }
 
 .seeMoreButton {
-  padding: 12px 142px;
+  padding: 12px 128px;
   border: none;
   border-radius: 32px;
   background-color: var(--brand-color-dark);
   color: white;
 }
 
+.seeMoreButton:is(:hover, :focus) {
+  color: var(--brand-color-hover);
+}
+
+.seeMoreButton:is(:hover, :focus) .rightArrow {
+  fill: var(--brand-color-hover);
+}
+
 .rightArrow {
   width: 12px;
   height: 12px;
+  fill: var(--brand-color-ligth);
 }
 
 @media screen and (min-width: 768px) {

@@ -4,6 +4,7 @@
   --brand-color-dark: #181818;
   --brand-color-ligth: #ececec;
   --brand-color-white: #ffffff;
+  --brand-color-hover: #6b6b6b;
   --container-mobile-padding: 0 20px;
   --container-desktop-padding: 0 100px;
   /* --desctop-main-heading: */
@@ -58,11 +59,6 @@ body {
   font-weight: 400;
   font-variation-settings: 'wdth' 100;
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 .container {
   width: 100%;

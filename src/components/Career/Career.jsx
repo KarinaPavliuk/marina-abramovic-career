@@ -9,7 +9,7 @@ import sprite from '../../images/sprite.svg';
 
 const Career = () => {
   return (
-    <div className={css.container}>
+    <div id="career" className={css.container}>
       <div className={css.descriptionContainer}>
         <p className={css.sitePartName}>CAREER</p>
         <p className={css.description}>

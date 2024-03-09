@@ -4,7 +4,7 @@ import sprite from '../../images/sprite.svg';
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className={css.container}>
         <p className={css.sitePartName}>ABOUT</p>
         <div className={css.contentContainer}>
@@ -34,7 +34,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <hr className={css.horizontalLine}></hr>
+      <div className={css.horizontalLine}>
+        <p className={css.horizontalLineText}>
+          “BECAUSE IN THE END YOU ARE REALLY ALONE, WHATEVER YOU DO.”
+        </p>
+      </div>
     </div>
   );
 };

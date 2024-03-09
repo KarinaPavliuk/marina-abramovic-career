@@ -1,13 +1,25 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import css from './Header.module.css';
 import sprite from '../../images/sprite.svg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
+
+  function toggleMenu() {
     setIsOpen(!isOpen);
-  };
+  }
+
+  function toggleMenuByBackdrop(event) {
+    const targetClassName = event.target.className;
+    if (
+      typeof targetClassName === 'string' &&
+      targetClassName.includes('backdrop')
+    ) {
+      setIsOpen(false);
+    }
+  }
 
   return (
     <header className={css.сontainer}>
@@ -18,17 +30,19 @@ const Header = () => {
       </a>
       <nav className={css.navigation}>
         <ul>
-          <li>
-            <a href="#">ABOUT</a>
+          <li className={css.navigationItem}>
+            {/* <Link to="/about">ABOUT</Link> */}
+            <a href="#about">ABOUT</a>
           </li>
-          <li>
-            <a href="#">CAREER</a>
+          <li className={css.navigationItem}>
+            {/* <Link to="/career">CAREER</Link> */}
+            <a href="#career">CAREER</a>
           </li>
-          <li>
-            <a href="#">AWARDS</a>
+          <li className={css.navigationItem}>
+            <a href="#awards">AWARDS</a>
           </li>
-          <li>
-            <a href="#">CONTACTS</a>
+          <li className={css.navigationItem}>
+            <a href="#contacts">CONTACTS</a>
           </li>
         </ul>
       </nav>
@@ -39,7 +53,10 @@ const Header = () => {
         </svg>
       </button>
 
-      <div className={`${css.backdrop} ${isOpen && css.open}`}>
+      <div
+        className={`${css.backdrop} ${isOpen && css.open}`}
+        onClick={toggleMenuByBackdrop}
+      >
         <nav className={`${css.mobileMenu} ${isOpen && css.open}`}>
           <button
             onClick={toggleMenu}
@@ -51,17 +68,17 @@ const Header = () => {
             </svg>
           </button>
           <ul className={css.menuList}>
-            <li>
-              <a href="#">ABOUT</a>
+            <li className={css.navigationItem}>
+              <a href="#about">ABOUT</a>
             </li>
-            <li>
-              <a href="#">CAREER</a>
+            <li className={css.navigationItem}>
+              <a href="#career">CAREER</a>
             </li>
-            <li>
-              <a href="#">AWARDS</a>
+            <li className={css.navigationItem}>
+              <a href="#awards">AWARDS</a>
             </li>
-            <li>
-              <a href="#">CONTACTS</a>
+            <li className={css.navigationItem}>
+              <a href="#contacts">CONTACTS</a>
             </li>
           </ul>
         </nav>

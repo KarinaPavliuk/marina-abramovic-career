@@ -1,4 +1,5 @@
 import './App.css';
+// import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import About from './components/About/About';
@@ -23,6 +24,12 @@ function App() {
       <SecondProjectPart></SecondProjectPart>
       <SubscribePart></SubscribePart>
       <Footer></Footer>
+      {/* <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/awards" element={<Awards />} />
+        <Route path="/contacts" element={<Footer />} />
+      </Routes> */}
     </div>
   );
 }
