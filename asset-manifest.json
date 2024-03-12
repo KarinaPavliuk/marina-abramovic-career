@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brand-site/static/css/main.7f4a3468.css",
-    "main.js": "/brand-site/static/js/main.9324e1ae.js",
+    "main.css": "/brand-site/static/css/main.cd12ed40.css",
+    "main.js": "/brand-site/static/js/main.de8641e1.js",
     "static/js/453.31fddc0c.chunk.js": "/brand-site/static/js/453.31fddc0c.chunk.js",
     "static/media/banner_second_img.png": "/brand-site/static/media/banner_second_img.9e391a2a820fd89d82dd.png",
     "static/media/book-7-deaths-of-maria-callas.png": "/brand-site/static/media/book-7-deaths-of-maria-callas.00630c463136e952bfc9.png",
@@ -20,12 +20,12 @@
     "static/media/banner_first_img.png": "/brand-site/static/media/banner_first_img.4ae6156082413a89be87.png",
     "static/media/sprite.svg": "/brand-site/static/media/sprite.3b1bbbe8f44501f767a776aa90346a76.svg",
     "index.html": "/brand-site/index.html",
-    "main.7f4a3468.css.map": "/brand-site/static/css/main.7f4a3468.css.map",
-    "main.9324e1ae.js.map": "/brand-site/static/js/main.9324e1ae.js.map",
+    "main.cd12ed40.css.map": "/brand-site/static/css/main.cd12ed40.css.map",
+    "main.de8641e1.js.map": "/brand-site/static/js/main.de8641e1.js.map",
     "453.31fddc0c.chunk.js.map": "/brand-site/static/js/453.31fddc0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f4a3468.css",
-    "static/js/main.9324e1ae.js"
+    "static/css/main.cd12ed40.css",
+    "static/js/main.de8641e1.js"
   ]
 }
