@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import css from './Header.module.css';
 import sprite from '../../images/sprite.svg';
@@ -11,8 +10,9 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
 
-  function toggleMenuByBackdrop(event) {
-    const targetClassName = event.target.className;
+  function toggleMenuByBackdrop(event: React.MouseEvent<HTMLDivElement>) {
+    const target = event.target as HTMLElement;
+    const targetClassName = target.className;
     if (
       typeof targetClassName === 'string' &&
       targetClassName.includes('backdrop')
@@ -31,11 +31,9 @@ const Header = () => {
       <nav className={css.navigation}>
         <ul>
           <li className={css.navigationItem}>
-            {/* <Link to="/about">ABOUT</Link> */}
             <a href="#about">ABOUT</a>
           </li>
           <li className={css.navigationItem}>
-            {/* <Link to="/career">CAREER</Link> */}
             <a href="#career">CAREER</a>
           </li>
           <li className={css.navigationItem}>

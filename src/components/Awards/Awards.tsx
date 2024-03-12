@@ -1,13 +1,12 @@
 import css from './Awards.module.css';
 import sprite from '../../images/sprite.svg';
 import awards from '../../data/awards.json';
-import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
 const Awards = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const handleButtonClick = index => {
+  const handleButtonClick = (index: number) => {
     setExpandedIndex(index === expandedIndex ? null : index);
   };
 

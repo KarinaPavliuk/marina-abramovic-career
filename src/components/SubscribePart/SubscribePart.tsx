@@ -2,9 +2,8 @@ import css from './SubscribePart.module.css';
 import sprite from '../../images/sprite.svg';
 
 const SubscribePart = () => {
-  function handleSubmit(event) {
+  function handleSubmit(event: { preventDefault: () => void }) {
     event.preventDefault();
-    alert('success!');
   }
 
   return (
