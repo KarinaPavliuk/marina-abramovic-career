@@ -1,6 +1,6 @@
 import css from './Books.module.css';
 import sprite from '../../images/sprite.svg';
-import books from '../../data/books.json';
+// import books from '../../data/books.json';
 import theCleaner from '../../images/books/book-the-cleaner.png';
 import walkThroughWalls from '../../images/books/book-walk-through-walls.png';
 import sevenDeaths from '../../images/books/book-7-deaths-of-maria-callas.png';
