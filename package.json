@@ -16,6 +16,7 @@
     "typescript": "^5.4.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://KarinaPavliuk.github.io/brand-site",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
