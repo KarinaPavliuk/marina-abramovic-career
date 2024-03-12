@@ -1,6 +1,6 @@
 .container {
   padding: var(--container-mobile-padding);
-  padding-bottom: 60px;
+  padding-bottom: 48px;
 }
 
 .sitePartName {
@@ -13,6 +13,7 @@
 .list {
   display: flex;
   column-gap: 20px;
+  padding-bottom: 12px;
   overflow: scroll;
   scrollbar-width: none;
 }

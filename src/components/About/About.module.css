@@ -22,7 +22,7 @@
 }
 
 .image {
-  width: 112%;
+  width: calc(100% + 40px);
   margin-bottom: 20px;
 }
 
@@ -42,7 +42,6 @@
 .description {
   margin-bottom: 40px;
   line-height: 24px;
-  /* text-align: justify; */
 }
 
 .seeMoreButton {

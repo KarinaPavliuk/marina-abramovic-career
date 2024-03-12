@@ -60,6 +60,10 @@ body {
   font-variation-settings: 'wdth' 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;

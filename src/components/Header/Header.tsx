@@ -66,16 +66,16 @@ const Header = () => {
             </svg>
           </button>
           <ul className={css.menuList}>
-            <li className={css.navigationItem}>
+            <li className={css.navigationItem} onClick={toggleMenu}>
               <a href="#about">ABOUT</a>
             </li>
-            <li className={css.navigationItem}>
+            <li className={css.navigationItem} onClick={toggleMenu}>
               <a href="#career">CAREER</a>
             </li>
-            <li className={css.navigationItem}>
+            <li className={css.navigationItem} onClick={toggleMenu}>
               <a href="#awards">AWARDS</a>
             </li>
-            <li className={css.navigationItem}>
+            <li className={css.navigationItem} onClick={toggleMenu}>
               <a href="#contacts">CONTACTS</a>
             </li>
           </ul>

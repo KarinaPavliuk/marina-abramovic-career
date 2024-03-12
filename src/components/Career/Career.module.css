@@ -1,7 +1,7 @@
 .container {
   padding: var(--container-mobile-padding);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 18px;
 }
 
 .descriptionContainer {
@@ -16,13 +16,13 @@
 }
 
 .description {
-  /* text-align: justify; */
   line-height: 24px;
 }
 
 .performList {
   display: flex;
   column-gap: 20px;
+  padding-bottom: 12px;
   overflow: scroll;
   scrollbar-width: none;
 }

@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Awards = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const handleButtonClick = (index: number) => {
+  const openDescription = (index: number) => {
     setExpandedIndex(index === expandedIndex ? null : index);
   };
 
@@ -18,6 +18,7 @@ const Awards = () => {
           <li
             className={`${css.listItem} ${expandedIndex === index && css.heightAnimate}`}
             key={index}
+            onClick={() => openDescription(index)}
           >
             <div className={css.listItemContent}>
               <div>
@@ -32,7 +33,6 @@ const Awards = () => {
             </div>
 
             <button
-              onClick={() => handleButtonClick(index)}
               type="button"
               className={`${css.toggleButton} ${expandedIndex === index && css.rotate}`}
             >
@@ -42,66 +42,6 @@ const Awards = () => {
             </button>
           </li>
         ))}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>GOLDEN LION, XLVII VENICE BIENNALE</span>
-            <span>1997</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>NIEDERSÄCHSISCHER KUNSTPREIS</span>
-            <span>2002</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>INTERNATIONAL ASSOCIATION OF ART CRITICS</span>
-            <span>2003</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>AUSTRIAN DECORATION FOR SCIENCE AND ART</span>
-            <span>2008</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>HONORARY DOCTORATE OF ARTS, UNIVERSITY OF PLYMOUTH UK</span>
-            <span>2009</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
-
-        {/* <li className={css.listItem}>
-          <p className={css.listItemTitle}>
-            <span>CULTURAL LEADERSHIP AWARD, AMERICAN FEDERATION OF ARTS</span>
-            <span>2011</span>
-          </p>
-          <svg className={css.arrowIcon}>
-            <use xlinkHref={`${sprite}#icon-list-down-arrow`} />
-          </svg>
-        </li> */}
       </ul>
     </div>
   );
