@@ -20,6 +20,7 @@
   position: relative;
   display: flex;
   transition: height 0.5s ease;
+  cursor: pointer;
 }
 
 .listItem.heightAnimate {
