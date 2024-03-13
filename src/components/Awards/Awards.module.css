@@ -24,7 +24,7 @@
 }
 
 .listItem.heightAnimate {
-  height: 602px;
+  height: 702px;
 }
 
 .listItem:nth-child(-n + 5)::after {
@@ -107,7 +107,7 @@
   }
 
   .listItem.heightAnimate {
-    height: 358px;
+    height: 388px;
   }
 
   .title,
