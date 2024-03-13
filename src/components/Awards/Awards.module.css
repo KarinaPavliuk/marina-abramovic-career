@@ -116,6 +116,10 @@
     line-height: 1;
   }
 
+  .description {
+    font-size: 16px;
+  }
+
   .toggleButton {
     margin-right: 52px;
   }
